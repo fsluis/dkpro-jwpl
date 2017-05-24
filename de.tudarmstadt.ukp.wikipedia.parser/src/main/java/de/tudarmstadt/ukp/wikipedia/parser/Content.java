@@ -17,6 +17,7 @@
  *******************************************************************************/
 package de.tudarmstadt.ukp.wikipedia.parser;
 
+import java.io.Serializable;
 import java.util.List;
 
 /**
@@ -26,7 +27,7 @@ import java.util.List;
  * this is true for any implementing class!<br>
  *
  */
-public interface Content{
+public interface Content extends Serializable {
 	
 	public enum FormatType {
 			/** Bold Text */	

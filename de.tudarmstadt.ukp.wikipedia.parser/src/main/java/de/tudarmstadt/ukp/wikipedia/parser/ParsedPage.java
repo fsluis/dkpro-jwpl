@@ -17,6 +17,7 @@
  *******************************************************************************/
 package de.tudarmstadt.ukp.wikipedia.parser;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,7 +26,7 @@ import de.tudarmstadt.ukp.wikipedia.parser.Content.FormatType;
 /**
  * Provides access to structured information about a MediaWiki article page.
  */
-public class ParsedPage{	
+public class ParsedPage implements Serializable {
 	
 	private String name;
 	private int pageId;
